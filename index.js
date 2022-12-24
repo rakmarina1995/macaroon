@@ -9,6 +9,13 @@
             document.getElementById('menu').classList.remove('open');
         }
     })
+   const macaroons_btn= document.getElementsByClassName('macaroon__btn');
+    for (let i = 0; i < macaroons_btn.length; i++) {
+        macaroons_btn[i].onclick=()=>{
+            document.getElementById('inputProduct').value = macaroons_btn[i].previousElementSibling.previousElementSibling.previousElementSibling.innerText;
+        }
+    }
+
 
     let loader = $('.loader');
     $('#form_btn').click(() => {

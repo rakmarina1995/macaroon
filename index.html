@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="dist/styles.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="index.js"></script>
 </head>
 <body>
 <header class="header">
@@ -35,13 +36,13 @@
             </div>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Пироженки</a>
+                    <a href="#macaroons" class="menu__link">Пироженки</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#about" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Оформить заказ</a>
+                    <a href="#order" class="menu__link">Оформить заказ</a>
                 </li>
             </ul>
         </nav>
@@ -60,14 +61,14 @@
             <div class="main__text">
                 Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками Macaroon!
             </div>
-            <button class="btn main__btn">Выбрать макарун</button>
+            <a href="#macaroons" class="btn main__btn" id="choose_btn">Выбрать макарун</a>
         </div>
         <div class="main__image">
             <img src="images/main__img.png" alt="Macaroons" class="main__img">
         </div>
     </div>
 </section>
-<section class="description">
+<section class="description" id="about">
     <div class="container description__container">
         <div class="description_main-info">
             <div class="description__info">
@@ -142,7 +143,7 @@
         </div>
     </div>
 </section>
-<section class="macaroons">
+<section class="macaroons" id="macaroons">
     <div class="container macaroons_container">
         <div class="macaroons__title">
             Выберите свой макарун
@@ -161,7 +162,7 @@
                 <div class="macaroon__price">
                     1,70 руб.
                 </div>
-                <button class="btn macaroon__btn">Заказать</button>
+                <a href="#order" class="btn macaroon__btn">Заказать</a>
             </div>
             <div class="macaroon">
                 <div class="macaroon__image">
@@ -176,7 +177,7 @@
                 <div class="macaroon__price">
                     1,70 руб.
                 </div>
-                <button class="btn macaroon__btn">Заказать</button>
+                <a href="#order" class="btn macaroon__btn">Заказать</a>
             </div>
             <div class="macaroon">
                 <div class="macaroon__image">
@@ -191,7 +192,7 @@
                 <div class="macaroon__price">
                     1,70 руб.
                 </div>
-                <button class="btn macaroon__btn">Заказать</button>
+                <a href="#order" class="btn macaroon__btn">Заказать</a>
             </div>
             <div class="macaroon">
                 <div class="macaroon__image">
@@ -206,12 +207,12 @@
                 <div class="macaroon__price">
                     1,70 руб.
                 </div>
-                <button class="btn macaroon__btn">Заказать</button>
+                <a href="#order" class="btn macaroon__btn">Заказать</a>
             </div>
         </div>
     </div>
 </section>
-<section class="order">
+<section class="order" id="order">
     <div class="container order__container">
         <div class="order__image">
             <img src="images/order__image.png" alt="order__image" class="order__img">
@@ -244,7 +245,7 @@
                     </div>
                 </div>
                 <div class="form__phone position">
-                    <input type="text" placeholder="+375 (__) ___ - __ - __" class="form__input" id="inputPhone"
+                    <input type="text" placeholder="Ваш телефон" class="form__input" id="inputPhone"
                            name="телефон" required>
                     <div class="invalid-feedback">
                         Необходимо ввести телефон!
